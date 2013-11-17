@@ -1,0 +1,37 @@
+{
+  "name": "docpad-plugin-webpack",
+  "version": "2.0.0-alpha.1",
+  "description": "DocPad plugin to bundle JavaScript moodules with webpack.",
+  "license": "MIT",
+  "homepage": "http://github.com/robloach/docpad-plugin-webpack",
+  "keywords": [
+    "docpad",
+    "docpad-plugin",
+    "webpack"
+  ],
+  "author": "Rob Loach (http://robloach.net)",
+  "maintainers": [
+    "Rob Loach (http://robloach.net)"
+  ],
+  "contributors": [
+    "Rob Loach (http://robloach.net)"
+  ],
+  "bugs": {
+    "url": "http://github.com/robloach/docpad-plugin-webpack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RobLoach/docpad-plugin-webpack.git"
+  },
+  "engines": {
+    "node": ">=0.10",
+    "docpad": "6.x"
+  },
+  "dependencies": {
+    "webpack": "~0.11.6"
+  },
+  "main": "./out/grunt.plugin.js",
+  "scripts": {
+    "test": "node ./out/grunt.test.js"
+  }
+}

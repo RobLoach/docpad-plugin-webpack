@@ -1,0 +1,6 @@
+{
+  "name": "docpad-plugin-webpack-testsite",
+  "description": "Tests the webpack plugin for DocPad.",
+  "version": "2.0.0-alpha.1",
+  "private": true
+}
