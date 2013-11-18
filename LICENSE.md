@@ -1,7 +1,7 @@
 LICENSE
 =======
 
-Component Installer is released under the MIT License:
+Webpack DocPad Plugin is released under the MIT License:
 
 > Copyright (C) 2013 [Rob Loach](http://robloach.net)
 >

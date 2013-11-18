@@ -24,14 +24,23 @@
     "url": "https://github.com/RobLoach/docpad-plugin-webpack.git"
   },
   "engines": {
-    "node": ">=0.10",
+    "node": ">=0.10"
+  },
+  "peerDependencies": {
     "docpad": "6.x"
   },
   "dependencies": {
     "webpack": "~0.11.6"
   },
-  "main": "./out/grunt.plugin.js",
+  "devDependencies": {
+    "coffee-script": "~1.6.2",
+    "joe": "~1.3.2",
+    "joe-reporter-console": "~1.2.1",
+    "chai": "~1.8.1",
+    "docpad": ">=6.37 <7"
+  },
+  "main": "./out/webpack.plugin.js",
   "scripts": {
-    "test": "node ./out/grunt.test.js"
+    "test": "node ./out/webpack.test.js"
   }
 }
