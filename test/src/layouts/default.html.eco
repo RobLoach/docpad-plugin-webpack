@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+
+  <!-- Site Properities -->
+  <title><%= @site.title or "DocPad Test" %></title>
+</head>
+<body>
+
+  <header>
+    <h1><%= @document.title %></h1>
+  </header>
+  <article>
+    <%- @content %>
+  </article>
+  <footer></footer>
+  <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+</body>
+</html>

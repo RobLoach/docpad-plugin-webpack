@@ -12,9 +12,7 @@ module.exports = (BasePlugin) ->
         entry: './src/index.js'
         output:
           path: ''
-          filename: '[hash].bundle.js'
         cache: false
-        debug: true
         node:
           console: true
 
@@ -36,10 +34,13 @@ module.exports = (BasePlugin) ->
       # Prepare
       rootPath = @docpad.getConfig().rootPath
       webpackOptions = @getConfig().webpackOptions
-      webpackOptions.context = rootPath if webpackOptions.context == ''
-      webpackOptions.output.path = @path.join(webpackOptions.context,"src", "files") if webpackOptions.output.path == ''
 
-      console.log config.webpackOptions
+      # Set the webpack context directory to the DocPad root.
+      webpackOptions.context = rootPath if webpackOptions.context == ''
+
+      # Assign the output directory to src/files.
+      webpackOptions.output.path = @path.join(webpackOptions.context, "out") if webpackOptions.output.path == ''
+
       # Execute webpack
       @webpack(webpackOptions, next)
 
