@@ -8,13 +8,13 @@ module.exports = (BasePlugin) ->
     # Configuration
     config:
       webpackOptions:
+        entry: './entry.js'
         context: ''
-        entry: './src/index.js'
+        cache: false
+        optimize:
+          minimize: false
         output:
           path: ''
-        cache: false
-        node:
-          console: true
 
     # Constructor
     constructor: ->
@@ -36,12 +36,14 @@ module.exports = (BasePlugin) ->
       webpackOptions = @getConfig().webpackOptions
 
       # Set the webpack context directory to the DocPad root.
-      webpackOptions.context = rootPath if webpackOptions.context == ''
+      if webpackOptions.context == ''
+        webpackOptions.context = @path.join(rootPath, 'src')
 
       # Assign the output directory to src/files.
-      webpackOptions.output.path = @path.join(webpackOptions.context, "out") if webpackOptions.output.path == ''
+      if webpackOptions.output.path == ''
+        webpackOptions.output.path = @path.join(rootPath, 'out')
 
-      # Execute webpack
+      # Build with webpack
       @webpack(webpackOptions, next)
 
       # Chain

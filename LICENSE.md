@@ -1,7 +1,7 @@
 LICENSE
 =======
 
-Webpack DocPad Plugin is released under the MIT License:
+webpack Plugin for DocPad is released under the MIT License:
 
 > Copyright (C) 2013 [Rob Loach](http://robloach.net)
 >

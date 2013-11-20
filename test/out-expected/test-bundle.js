@@ -50,7 +50,8 @@
 
 	var inc = require(1).increment;
 	var a = 1;
-	inc(a);
+	var i = inc(a);
+	console.log('Increment of 1 is: ' + i.toString());
 
 
 /***/ },

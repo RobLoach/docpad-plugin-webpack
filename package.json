@@ -1,7 +1,7 @@
 {
   "name": "docpad-plugin-webpack",
-  "version": "2.0.0-alpha.1",
-  "description": "DocPad plugin to bundle JavaScript moodules with webpack.",
+  "version": "2.0.0",
+  "description": "DocPad plugin to bundle CommonJS/AMD/Labeled Modules with webpack.",
   "license": "MIT",
   "homepage": "http://github.com/robloach/docpad-plugin-webpack",
   "keywords": [
