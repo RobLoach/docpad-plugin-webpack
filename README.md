@@ -26,7 +26,7 @@ it with DocPad:
 The entry point to webpack defaults to `src/entry.js`, so create a file there:
 
 ``` javascript
-console.write("It works.");
+console.log("It works.");
 ```
 
 When building with DocPad, webpack will compile the bundles to `out/bundle.js`.
