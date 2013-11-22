@@ -41,6 +41,7 @@
   },
   "main": "./out/webpack.plugin.js",
   "scripts": {
+    "preinstall": "node ./cyclic.js",
     "test": "node ./out/webpack.test.js"
   }
 }
