@@ -2,15 +2,9 @@ templateData:
   site:
     title: "webpack Plugin for DocPad"
     scripts:
-      "test-bundle.js"
+      "bundle.js"
 plugins:
   webpack:
-    webpackOptions:
-      entry: './entry.js'
-      context: ''
-      cache: false
-      optimize:
-        minimize: false
-      output:
-        path: ''
-        filename: 'test-bundle.js'
+    # Disable minification.
+    optimize:
+      minimize: false

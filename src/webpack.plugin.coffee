@@ -7,14 +7,9 @@ module.exports = (BasePlugin) ->
 
     # Configuration
     config:
-      webpackOptions:
-        entry: './entry.js'
-        context: ''
-        cache: false
-        optimize:
-          minimize: false
-        output:
-          path: ''
+      optimize:
+        minimize: false
+      verbose: false
 
     # Constructor
     constructor: ->
@@ -28,23 +23,42 @@ module.exports = (BasePlugin) ->
       # Chain
       @
 
-    # Write After
-    # Run Grunt after DocPad generation
-    writeAfter: (opts, next) ->
+    # Before populating dynamic files, compile with webpack.
+    populateCollectionsBefore: (opts, next) ->
       # Prepare
-      rootPath = @docpad.getConfig().rootPath
-      webpackOptions = @getConfig().webpackOptions
+      config = @docpad.getConfig()
+      webpackConfig = @getConfig()
 
-      # Set the webpack context directory to the DocPad root.
-      if webpackOptions.context == ''
-        webpackOptions.context = @path.join(rootPath, 'src')
+      # Set the default webpack options.
+      webpackConfig.entry = webpackConfig.entry or './entry.js'
+      webpackConfig.context = config.srcPath
+      webpackConfig.output = webpackConfig.output or {}
+      webpackConfig.output.path = config.filesPaths[0] # TODO: Output to /out?
 
-      # Assign the output directory to src/files.
-      if webpackOptions.output.path == ''
-        webpackOptions.output.path = @path.join(rootPath, 'out')
+      # Create the webpack compiler.
+      compiler = @webpack(webpackConfig);
 
-      # Build with webpack
-      @webpack(webpackOptions, next)
+      # Run the compiler.
+      compiler.run (err, stats) ->
+        if err
+          return next(err)
+
+        if !config.verbose
+          output = stats.toString
+            colors: true
+            hash: false
+            timings: false
+            assets: true
+            chunks: false
+            chunkModules: false
+            modules: false
+            children: true
+        else
+          output = stats.toString
+            colors: true
+          
+        @docpad.log('info', output)
+        next()
 
       # Chain
       @

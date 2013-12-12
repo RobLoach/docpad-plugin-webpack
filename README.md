@@ -29,7 +29,8 @@ The entry point to webpack defaults to `src/entry.js`, so create a file there:
 console.log("It works.");
 ```
 
-When building with DocPad, webpack will compile the bundles to `out/bundle.js`.
+When building with DocPad, webpack will compile the bundles to
+`src/files/bundle.js`.
 
 ### Second file
 
@@ -47,7 +48,7 @@ console.log(content);
 ```
 
 Rebuilding with DocPad will bundle both `entry.js` and `content.js` into the
-same `out/bundle.js`.
+same `src/files/bundle.js`.
 
 
 ## Configuration
@@ -59,15 +60,10 @@ to your [DocPad configuration file](http://docpad.org/docs/config):
 ``` coffeescript
 plugins:
   webpack:
-    webpackOptions:
-      entry: './entry.js'
-      context: ''
-      cache: false
-      optimize:
-        minimize: false
-      output:
-        path: ''
-        filename: 'bundle.js'
+    entry: './entry.js'
+    optimize:
+      minimize: true
+    verbose: false
 ```
 
 
