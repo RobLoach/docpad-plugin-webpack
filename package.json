@@ -1,6 +1,6 @@
 {
   "name": "docpad-plugin-webpack",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "DocPad plugin to bundle CommonJS/AMD/Labeled Modules with webpack.",
   "license": "MIT",
   "homepage": "http://github.com/robloach/docpad-plugin-webpack",
