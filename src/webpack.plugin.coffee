@@ -45,6 +45,10 @@ module.exports = (BasePlugin) ->
 						filename: file.get('relativeOutPath')
 					}
 
+					# Provide the default configuration options if needed.
+					for own key, value of config
+						webpackOpts[key]? = value
+
 					# Create the webpack compiler.
 					compiler = webpack(webpackOpts);
 

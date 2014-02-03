@@ -21,7 +21,7 @@ $ docpad install webpack
 
 ## Usage
 
-Reference the [webpack documentation](http://github.com/webpack/docs/wiki) for
+Reference the [webpack configuration](http://webpack.github.io/docs/configuration.html) for
 a full understanding of webpack. The below is only an introduction to how to use
 it with DocPad:
 
@@ -62,17 +62,24 @@ Rebuilding with DocPad will bundle both `entry.js` and `content.js` in `entry.js
 
 ## Configuration
 
-The default configuration for this plugin is the equivalant of adding the
-following [webpack options](http://github.com/webpack/docs/wiki/webpack-options)
-to your [DocPad configuration file](http://docpad.org/docs/config):
+The default configuration for this plugin is the equivalant of adding the following [webpack config](http://webpack.github.io/docs/configuration.html) to your [DocPad configuration file](http://docpad.org/docs/config):
 
 ``` coffeescript
 plugins:
 	webpack:
-		entry: './entry.js'
-		optimize:
-			minimize: true
 		verbose: false
+		debug: true
+```
+
+It is also possible to pass the options through on a document-basis:
+``` javascript
+---
+webpack:
+	verbose: false
+	debug: true
+---
+var myfile = require('./myfile');
+console.log(myfile);
 ```
 
 <!-- HISTORY -->
