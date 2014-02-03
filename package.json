@@ -30,7 +30,7 @@
 		"docpad": "6.x"
 	},
 	"dependencies": {
-		"webpack": "~0.11.6",
+		"webpack": "~1.0.0",
 		"taskgroup": "~3.3.6"
 	},
 	"devDependencies": {
