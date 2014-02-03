@@ -47,7 +47,7 @@ module.exports = (BasePlugin) ->
 
 					# Provide the default configuration options if needed.
 					for own key, value of config
-						webpackOpts[key]? = value
+						webpackOpts[key] ?= value
 
 					# Create the webpack compiler.
 					compiler = webpack(webpackOpts);

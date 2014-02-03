@@ -1,9 +1,8 @@
 ---
 webpack:
 	verbose: true
-	debug: false
-	optimize:
-		minimize: true
+	debug: true
+	target: "node"
 ---
 
 var hello = "This tests overriding the parameters.";
