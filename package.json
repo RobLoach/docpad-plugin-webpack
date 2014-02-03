@@ -24,7 +24,7 @@
 		"url": "https://github.com/RobLoach/docpad-plugin-webpack.git"
 	},
 	"engines": {
-		"node": ">=0.10"
+		"node": ">=0.4"
 	},
 	"peerDependencies": {
 		"docpad": "6.x"
