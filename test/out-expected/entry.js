@@ -1,4 +1,5 @@
 /******/ (function(modules) { // webpackBootstrap
+/******/ 	
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/ 	
@@ -36,16 +37,16 @@
 /******/ 	// expose the module cache
 /******/ 	require.cache = installedModules;
 /******/ 	
+/******/ 	// __webpack_public_path__
+/******/ 	require.p = "";
+/******/ 	
 /******/ 	
 /******/ 	// Load entry module and return exports
 /******/ 	return require(0);
 /******/ })
 /************************************************************************/
-/******/ ({
-/******/ // __webpack_public_path__
-/******/ c: "",
-
-/***/ 0:
+/******/ ([
+/* 0 */
 /***/ function(module, exports, require) {
 
 	/**
@@ -66,32 +67,38 @@
 	console.log(output);
 	document.write(output);
 
-
+	var css = require(3);
+	console.log(css);
 
 /***/ },
-
-/***/ 1:
+/* 1 */
 /***/ function(module, exports, require) {
 
 	var add = require(2).add;
 	exports.increment = function(val) {
-	    return add(val, 1);
+		return add(val, 1);
 	};
 
 
 /***/ },
-
-/***/ 2:
+/* 2 */
 /***/ function(module, exports, require) {
 
 	exports.add = function() {
-	    var sum = 0, i = 0, args = arguments, l = args.length;
-	    while (i < l) {
-	        sum += args[i++];
-	    }
-	    return sum;
+		var sum = 0, i = 0, args = arguments, l = args.length;
+		while (i < l) {
+			sum += args[i++];
+		}
+		return sum;
 	};
 
 
+/***/ },
+/* 3 */
+/***/ function(module, exports, require) {
+
+	module.exports =
+		"body {\n\tbackground-color: black;\n}\n";
+
 /***/ }
-/******/ })
+/******/ ])

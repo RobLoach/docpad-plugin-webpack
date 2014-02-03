@@ -1,10 +1,10 @@
 templateData:
-  site:
-    title: "webpack Plugin for DocPad"
-    scripts:
-      "bundle.js"
+	site:
+		title: "webpack Plugin for DocPad"
+		scripts:
+			"entry.js"
 plugins:
-  webpack:
-    # Disable minification.
-    optimize:
-      minimize: false
+	webpack:
+		# Disable minification.
+		optimize:
+			minimize: false
