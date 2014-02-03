@@ -1,3 +1,6 @@
+---
+webpack: true
+---
 /**
  * Entry file for our Webpack suite of files.
  */
@@ -16,3 +19,5 @@ var output = 'Increment of 1 is: ' + i.toString();
 console.log(output);
 document.write(output);
 
+var css = require('css!./mystyle.css');
+console.log(css);
