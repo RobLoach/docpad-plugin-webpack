@@ -4,6 +4,7 @@
 
 [![Build Status](http://img.shields.io/travis-ci/RobLoach/docpad-plugin-webpack.png?branch=master)](http://travis-ci.org/RobLoach/docpad-plugin-webpack "Check this project's build status on TravisCI")
 [![NPM version](http://badge.fury.io/js/docpad-plugin-webpack.png)](https://npmjs.org/package/docpad-plugin-webpack "View this project on NPM")
+[![Dependency Status](https://david-dm.org/RobLoach/docpad-plugin-webpack.png?theme=shields.io)](https://david-dm.org/RobLoach/docpad-plugin-webpack)<br/>
 [![Gittip donate button](http://img.shields.io/gittip/robloach.png)](https://www.gittip.com/robloach/ "Donate weekly to this project using Gittip")
 [![Flattr donate button](http://img.shields.io/flattr/donate.png?color=yellow)](http://flattr.com/thing/2257574/RobLoach "Donate monthly to this project using Flattr")
 
@@ -122,8 +123,8 @@ No sponsors yet! Will you be the first?
 
 These amazing people have contributed code to this project:
 
-- [RobLoach](https://github.com/RobLoach) - [view contributions](https://github.com/RobLoach/docpad-plugin-webpack/commits?author=RobLoach)
-- [sokra](https://github.com/sokra) - [view contributions](https://github.com/RobLoach/docpad-plugin-webpack/commits?author=sokra)
+- [RobLoach](https://github.com/RobLoach) — [view contributions](https://github.com/RobLoach/docpad-plugin-webpack/commits?author=RobLoach)
+- [sokra](https://github.com/sokra) — [view contributions](https://github.com/RobLoach/docpad-plugin-webpack/commits?author=sokra)
 
 [Become a contributor!](https://github.com/RobLoach/docpad-plugin-webpack/blob/master/CONTRIBUTING.md#files)
 

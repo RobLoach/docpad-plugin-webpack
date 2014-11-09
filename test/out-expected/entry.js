@@ -1,58 +1,55 @@
 /******/ (function(modules) { // webpackBootstrap
-/******/ 	// shortcut for better minimizing
-/******/ 	var exports = "exports";
-/******/ 	
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
-/******/ 	
+/******/
 /******/ 	// The require function
-/******/ 	function require(moduleId) {
+/******/ 	function __webpack_require__(moduleId) {
+/******/
 /******/ 		// Check if module is in cache
 /******/ 		if(installedModules[moduleId])
-/******/ 			return installedModules[moduleId][exports];
-/******/ 		
+/******/ 			return installedModules[moduleId].exports;
+/******/
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			exports: {},
 /******/ 			id: moduleId,
 /******/ 			loaded: false
 /******/ 		};
-/******/ 		
+/******/
 /******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module[exports], module, module[exports], require);
-/******/ 		
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
 /******/ 		// Flag the module as loaded
 /******/ 		module.loaded = true;
-/******/ 		
+/******/
 /******/ 		// Return the exports of the module
-/******/ 		return module[exports];
+/******/ 		return module.exports;
 /******/ 	}
-/******/ 	
-/******/ 	
+/******/
+/******/
 /******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	require.modules = modules;
-/******/ 	
+/******/ 	__webpack_require__.m = modules;
+/******/
 /******/ 	// expose the module cache
-/******/ 	require.cache = installedModules;
-/******/ 	
+/******/ 	__webpack_require__.c = installedModules;
+/******/
 /******/ 	// __webpack_public_path__
-/******/ 	require.p = "";
-/******/ 	
-/******/ 	
+/******/ 	__webpack_require__.p = "";
+/******/
 /******/ 	// Load entry module and return exports
-/******/ 	return require(0);
+/******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, require) {
+/***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * Entry file for our Webpack suite of files.
 	 */
 
 	// Retrieve the increment function.
-	var inc = require(1).increment;
+	var inc = __webpack_require__(1).increment;
 
 	// Set a value.
 	var a = 1;
@@ -65,14 +62,14 @@
 	console.log(output);
 	document.write(output);
 
-	var css = require(3);
+	var css = __webpack_require__(3);
 	console.log(css);
 
 /***/ },
 /* 1 */
-/***/ function(module, exports, require) {
+/***/ function(module, exports, __webpack_require__) {
 
-	var add = require(2).add;
+	var add = __webpack_require__(2).add;
 	exports.increment = function(val) {
 		return add(val, 1);
 	};
@@ -80,7 +77,7 @@
 
 /***/ },
 /* 2 */
-/***/ function(module, exports, require) {
+/***/ function(module, exports, __webpack_require__) {
 
 	exports.add = function() {
 		var sum = 0, i = 0, args = arguments, l = args.length;
@@ -93,10 +90,31 @@
 
 /***/ },
 /* 3 */
-/***/ function(module, exports, require) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports =
-		"body {\n\tbackground-color: black;\n}\n";
+	exports = module.exports = __webpack_require__(4)();
+	exports.push([module.id, "body {\n\tbackground-color: black;\n}\n", ""]);
+
+/***/ },
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = function() {
+		var list = [];
+		list.toString = function toString() {
+			var result = [];
+			for(var i = 0; i < this.length; i++) {
+				var item = this[i];
+				if(item[2]) {
+					result.push("@media " + item[2] + "{" + item[1] + "}");
+				} else {
+					result.push(item[1]);
+				}
+			}
+			return result.join("");
+		};
+		return list;
+	}
 
 /***/ }
 /******/ ])

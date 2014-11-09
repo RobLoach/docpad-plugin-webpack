@@ -4,7 +4,7 @@
 	"version": "2.0.0",
 	"private": true,
 	"dependencies": {
-		"docpad-plugin-eco": "~2.0.2",
-		"css-loader": "~0.6.7"
+		"docpad-plugin-eco": "~2.1.0",
+		"css-loader": "~0.9.0"
 	}
 }

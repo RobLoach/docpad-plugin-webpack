@@ -1,5 +1,8 @@
 ## History
 
+- v2.2.0 November 9, 2014
+	- Update dependencies
+
 - v2.1.0 January 28th, 2014
 	- Use meta-data rather than configuration
 
