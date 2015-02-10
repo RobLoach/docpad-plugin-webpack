@@ -2,11 +2,12 @@
 
 <!-- BADGES/ -->
 
-[![Build Status](http://img.shields.io/travis-ci/RobLoach/docpad-plugin-webpack.png?branch=master)](http://travis-ci.org/RobLoach/docpad-plugin-webpack "Check this project's build status on TravisCI")
-[![NPM version](http://badge.fury.io/js/docpad-plugin-webpack.png)](https://npmjs.org/package/docpad-plugin-webpack "View this project on NPM")
-[![Dependency Status](https://david-dm.org/RobLoach/docpad-plugin-webpack.png?theme=shields.io)](https://david-dm.org/RobLoach/docpad-plugin-webpack)<br/>
-[![Gittip donate button](http://img.shields.io/gittip/robloach.png)](https://www.gittip.com/robloach/ "Donate weekly to this project using Gittip")
-[![Flattr donate button](http://img.shields.io/flattr/donate.png?color=yellow)](http://flattr.com/thing/2257574/RobLoach "Donate monthly to this project using Flattr")
+[![Build Status](https://img.shields.io/travis/RobLoach/docpad-plugin-webpack/master.svg)](http://travis-ci.org/RobLoach/docpad-plugin-webpack "Check this project's build status on TravisCI")
+[![NPM version](https://img.shields.io/npm/v/docpad-plugin-webpack.svg)](https://npmjs.org/package/docpad-plugin-webpack "View this project on NPM")
+[![NPM downloads](https://img.shields.io/npm/dm/docpad-plugin-webpack.svg)](https://npmjs.org/package/docpad-plugin-webpack "View this project on NPM")
+[![Dependency Status](https://img.shields.io/david/RobLoach/docpad-plugin-webpack.svg)](https://david-dm.org/RobLoach/docpad-plugin-webpack)<br/>
+[![Gratipay donate button](https://img.shields.io/gratipay/robloach.svg)](https://www.gratipay.com/robloach/ "Donate weekly to this project using Gratipay")
+[![Flattr donate button](https://img.shields.io/badge/flattr-donate-yellow.svg)](http://flattr.com/thing/2257574/RobLoach "Donate monthly to this project using Flattr")
 
 <!-- /BADGES -->
 
@@ -116,8 +117,8 @@ These amazing people are maintaining this project:
 
 No sponsors yet! Will you be the first?
 
-[![Gittip donate button](http://img.shields.io/gittip/robloach.png)](https://www.gittip.com/robloach/ "Donate weekly to this project using Gittip")
-[![Flattr donate button](http://img.shields.io/flattr/donate.png?color=yellow)](http://flattr.com/thing/2257574/RobLoach "Donate monthly to this project using Flattr")
+[![Gratipay donate button](https://img.shields.io/gratipay/robloach.svg)](https://www.gratipay.com/robloach/ "Donate weekly to this project using Gratipay")
+[![Flattr donate button](https://img.shields.io/badge/flattr-donate-yellow.svg)](http://flattr.com/thing/2257574/RobLoach "Donate monthly to this project using Flattr")
 
 ### Contributors
 

@@ -1,6 +1,6 @@
 {
   "name": "docpad-plugin-webpack",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "DocPad plugin to bundle CommonJS/AMD/Labeled Modules with webpack.",
   "license": {
     "type": "MIT"
@@ -9,10 +9,11 @@
   "badges": {
     "travis": true,
     "npm": true,
-    "david": true,
+    "david": "RobLoach/docpad-plugin-webpack",
     "daviddev": false,
     "gittip": "robloach",
-    "flattr": "2257574/RobLoach"
+    "flattr": "2257574/RobLoach",
+    "npmdownloads": true
   },
   "keywords": [
     "docpad",

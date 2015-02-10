@@ -1,5 +1,8 @@
 ## History
 
+- v2.2.1 February 10, 2015
+	- Fixed documentation
+
 - v2.2.0 February 10, 2015
 	- Updated dependencies
 	- Fixed tests
