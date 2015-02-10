@@ -62,14 +62,14 @@
 	console.log(output);
 	document.write(output);
 
-	var css = __webpack_require__(3);
+	var css = __webpack_require__(2);
 	console.log(css);
 
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var add = __webpack_require__(2).add;
+	var add = __webpack_require__(3).add;
 	exports.increment = function(val) {
 		return add(val, 1);
 	};
@@ -77,6 +77,13 @@
 
 /***/ },
 /* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(4)();
+	exports.push([module.id, "body {\n\tbackground-color: black;\n}\n", ""]);
+
+/***/ },
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports.add = function() {
@@ -87,13 +94,6 @@
 		return sum;
 	};
 
-
-/***/ },
-/* 3 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(4)();
-	exports.push([module.id, "body {\n\tbackground-color: black;\n}\n", ""]);
 
 /***/ },
 /* 4 */
