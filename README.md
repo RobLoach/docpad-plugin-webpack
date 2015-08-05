@@ -66,7 +66,7 @@ Rebuilding with DocPad will bundle both `entry.js` and `content.js` in `entry.js
 
 ## Configuration
 
-The default configuration for this plugin is the equivalant of adding the following [webpack config](http://webpack.github.io/docs/configuration.html) to your [DocPad configuration file](http://docpad.org/docs/config):
+The default configuration for this plugin is the equivalent of adding the following [webpack config](http://webpack.github.io/docs/configuration.html) to your [DocPad configuration file](http://docpad.org/docs/config):
 
 ``` coffeescript
 plugins:
